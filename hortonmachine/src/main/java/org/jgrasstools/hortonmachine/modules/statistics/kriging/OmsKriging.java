@@ -740,7 +740,7 @@ public class OmsKriging extends JGTModel {
             }
         } else if (defaultVariogramMode == 1) {
             for( int j = 0; j < n; j++ ) {
-                for( int i = 0; i < n; i++ ) {
+                for( int i = 0; i <= j; i++ ) {
                     double rx = x[i] - x[j];
                     double ry = y[i] - y[j];
                     double rz = 0;
